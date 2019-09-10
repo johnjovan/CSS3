@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 Selector test</title>
+    <style media="screen">
+      h1:hover { color: red; }
+      h1:active { color: blue; }
+
+      h2:hover { color: blue;  }
+      h2:active { color: red;}
+
+      h3:active { color: green; }
+      h3:hover { color: pink; }
+
+      a { text-decoration: none; }
+      a:visited { color: #F1BB22;}
+      a:link { color: tomato;}
+      a:link::after { content: ' - ' attr(href); }
+
+      input:enabled { background-color: orange; }
+      input:disabled { background-color: violet; }
+      input:focus { background-color: yellow; }
+      p::first-letter { font-size: 3em; }
+      p::first-line { color: red;}
+    </style>
+  </head>
+  <body>
+    <h1>H1 Tag Hover and active test</h1>
+    <h2>H2 Tag Hover and active test</h2>
+    <h3>H3 Tag Hover and active test</h3>
+    <a href="http://facebook.com" target="_new">FACEBOOK</a> <br>
+    <a href="http://google.com" target="_new">GOOGLE</a> <br>
+    <a href="http://msn.com" target="_new">MSN</a> <br>
+    <a href="http://daum.com" target="_new">DAUM</a> <br>
+
+    <input type="text" /> <br> <br>
+    <input type="text" disabled/> <br><br>
+    <input type="text" /> <br><br>
+    1 <input type="checkbox" /> 2 <input type="checkbox" checked /> <br><br>
+
+    <p>Good morning everyone!! <br> Baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p><br>
+    <p>Magandang Umaga!! <br> Doooooooooooooooooooooo </p>
+  </body>
+</html>
