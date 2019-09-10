@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 String Selector Test</title>
+    <style media="screen">
+      /* img[src$=png] {
+        border: 10px solid blue;
+      } */
+
+      img[src*=icon] {
+        border: 3px dashed blue;
+      }
+      img[src*=Penguin] {
+        border: 5px dotted indigo;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/car.jpg" width="100px" />
+    <img src="images/icon.png" width="100px">
+    <img src="images/Penguin1.jpg" width="100px" height="150px">
+  </body>
+</html>
