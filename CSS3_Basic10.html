@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 Selector Basic 10</title>
+    <style media="screen">
+      /*
+      :first-of-type, :last-of-type, :nth-of-type, :nth-last-of type ()
+      */
+      /*
+      h1:first-of-type { color: red;}
+      h1:last-of-type { color: tomato;}
+      h2:nth-of-type(1) { color: pink;}
+      body > *:first-of-type { color:red; }
+      */
+      p::first-letter { font-size: 3em;}
+      p::first-line { color: red;}
+      p { counter-increment: rint;}
+      p::before { content: counter(rint) ".";}
+      p::after { content: " - " attr(data-page) "page"; }
+      p::selection { background-color: black; color: red;}
+    </style>
+  </head>
+  <body>
+    <h1>Say Hello!</h1>
+    <p data-page="52">Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+      Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+      Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+      Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+      Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+      Good Morning Everyone!! Magandang Umaga po!! Salamat po!!</p>
+
+      <p data-page="60">Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+        Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+        Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+        Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+        Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+        Good Morning Everyone!! Magandang Umaga po!! Salamat po!!</p>
+
+        <p data-page="80">Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+          Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+          Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+          Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+          Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+          Good Morning Everyone!! Magandang Umaga po!! Salamat po!!</p>
+
+          <p data-page="90">Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+            Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+            Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+            Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+            Good Morning Everyone!! Magandang Umaga po!! Salamat po!!
+            Good Morning Everyone!! Magandang Umaga po!! Salamat po!!</p>
+
+    <h1>H1 - Header 01</h1>
+    <h2>H2 - Header 02</h2>
+    <h3>H3 - Header 03</h3>
+    <h3>H3 - Header 03</h3>
+    <h2>H2 - Header 02</h2>
+    <h1>H1 - Header 01</h1>
+  </body>
+</html>
