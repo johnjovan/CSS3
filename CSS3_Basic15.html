@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 Font Property</title>
+    <style media="screen">
+      .button {
+        width: 150px;
+        height: 70px;
+        background-color: tomato;
+        border: 10px solid maroon;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px tomato;
+      }
+      .button:hover { background-color: pink; }
+      .button:active { background-color: black; }
+      /*
+      .font_big{ font-size: 2em; }
+      .font_italic{ font-style: italic; }
+      .font_bold{ font-weight: bold; }
+      .font_center{ text-align: center; }
+      */
+
+      .font_all{
+        font-size: 2em;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+      }
+      .button > a {
+        display: block;
+        line-height: 70px;
+        text-decoration: none;
+      }
+      .button > a:link { color: blue;}
+      .button > a:visited { color: red;}
+      .button > a:hover { color: yellow;}
+      .button > a:active { color: white;}
+    </style>
+  </head>
+  <body>
+    <div class="button">
+      <a href="#" class="font_all">Click</a>
+    </div>
+  </body>
+</html>
